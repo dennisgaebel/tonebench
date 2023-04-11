@@ -1,0 +1,392 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background: rgb(136, 4, 4);
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	line-height: 1;
+	margin-top: 0;
+	text-align: center;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Abel', sans-serif;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: red;
+	width: 100%;
+	z-index: 1;
+}
+
+nav a {
+	font-family: 'Rajdhani', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 1rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	column-gap: 100px;
+	list-style: '⚜️';
+	padding: 0 3rem;
+}
+
+ul li {
+	padding-left: .5rem;
+}
+
+@media screen and (min-width: 420px) {
+	ul {
+		column-count: 2;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	ul {
+		column-count: 3;
+	}
+}
+
+footer {
+	text-align: center;
+}
+
+section {
+	padding: 4rem calc(50% - 480px);
+}
+
+section:nth-of-type(odd) {
+	background: rgba(98, 57, 246, 1);
+	background: url(../blueprints/AT004-Facebook-Image-NF.jpg) center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+section:nth-of-type(odd)::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+
+/* section:nth-of-type(odd) h3 {
+	color: white;
+	position: relative;
+	z-index: 1;
+} */
+
+h3 {
+	color: white;
+	position: relative;
+	z-index: 1;
+}
+
+
+section:nth-of-type(odd) ul {
+	position: relative;
+	z-index: 1;
+}
+
+section:nth-of-type(odd) ul a {
+	color: white;
+}
+
+header {
+	position: re;ative;
+	z-index: 1;
+}
+
+body {
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+html {
+	font: normal 112.5% / 1.65 serif;
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 2.42424rem;
+}
+
+h2 {
+	font-size: 2.33333em;
+	margin-bottom: 2.0202rem;
+}
+
+h3 {
+	font-size: 1.66667em;
+	margin-bottom: 1.61616rem;
+}
+
+h4 {
+	font-size: 2em;
+	margin-bottom: 1.21212rem;
+}
+
+h5 {
+	font-size: 1.33333em;
+	margin-bottom: 0.80808rem;
+}
+
+h6 {
+	font-size: 1em;
+	margin-bottom: 0.60606rem;
+}
+
+p {
+	margin: auto auto 1.5rem;
+}
+
+p + p {
+	text-indent: 1.5rem;
+	margin-top: -1.5rem;
+}
+
+small {
+	font-size: 65%;
+}
+
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+.hero {
+	/* background: red url(../blueprints/aecb26289e54dd333e86b33da0312e34.jpg) top left no-repeat;
+	background-size: cover;
+	background-attachment: fixed; */
+	padding: 5rem 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	/* position: relative; */
+}
+
+/* .hero::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255,255,255,0.9);
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+} */
+
+.lede {
+	font-size: 1.5rem;
+	max-width: 600px;
+	margin: 2rem auto;
+}
+.button {
+	color: black;
+	padding: 1rem 1.5rem;
+	border-radius: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: .875rem;
+
+	position: relative;
+	display: inline-block;
+	color: red;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	letter-spacing: 2px;
+	overflow: hidden;
+	margin-right: 50px;
+}
+
+.button:hover {
+	background: red;
+	color: white;
+}
+
+.button:nth-child(1) {
+	filter: hue-rotate(270deg);
+}
+
+.button:nth-child(2) {
+	filter: hue-rotate(110deg);
+}
+
+.button span{
+	position: absolute;
+	display: block;
+}
+
+.button span:nth-child(1) {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,red);
+	animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+	0%{
+		left: -100%;
+	}
+
+	50%,100%{
+		left: 100%;
+	}
+}
+
+.button span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,red);
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+	0%{
+		top: -100%;
+	}
+
+	50%,100%{
+		top: 100%;
+	}
+}
+
+.button span:nth-child(3) {
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,red);
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.50s;
+}
+
+.button span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,red);
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s;
+}
+
+@keyframes animate3 {
+	0%{
+		right: -100%;
+	}
+
+	50%,100%{
+		right: 100%;
+	}
+}
+
+@keyframes animate4 {
+	0%{
+		bottom: -100%;
+	}
+
+	50%,100%{
+		bottom: 100%;
+	}
+}
+
+.screen-reader-text {
+	position: absolute;
+	clip-path: inset(50%);
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.screen-reader-text:focus {
+	display: block;
+	top: 5px;
+	left: 5px;
+	z-index: 100000;
+	clip-path: none;
+	background-color: #eee;
+	padding: 15px 23px 14px;
+	width: auto;
+	height: auto;
+	text-decoration: none;
+	line-height: normal;
+	color: #444;
+	font-size: 1em;
+	clip: auto !important;
+}
