@@ -177,11 +177,19 @@ footer {
 	align-items: center;
 	justify-content: center;
 	padding: 1rem;
+	padding-top: .5rem;
 }
 
+.bg::before {
+	content: '';
+	display: block;
+	width: 100%;
+	background: url(/assets/branding/imagery/68cc5fc2173d756489cc485e0548e099.jpg) #8f4026 center no-repeat;
+}
 .bg {
 	background: #8f4026;
 	box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), inset 0 3px 6px rgba(0,0,0,0.23);
+	position: relative;
 }
 
 .banner {
@@ -229,6 +237,16 @@ footer {
 	.newspaper {
 		column-count: 3;
 	}
+}
+
+.tel {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.tel a {
+	padding-left: 0;
 }
 
 .socials {
