@@ -78,24 +78,57 @@ a.active {
 	color: white;
 }
 
+nav {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+nav a {
+	display: block;
+	margin: 0.25rem;
+}
+
 nav a {
 	text-transform: uppercase;
 }
 
+@media screen and (min-width: 510px) {
+	nav {
+		text-align: right;
+		width: auto;
+	}
+
+	nav a {
+		display: inline-block;
+		margin: auto;
+	}
+}
+
 article h1 {
 	font-weight: 600;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	text-align: center;
 	margin-bottom: 1.25rem;
 }
 
 article h2 {
 	font-weight: 300;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-style: italic;
 	text-align: center;
 	margin-bottom: 1.875rem;
 	text-transform: capitalize;
+}
+
+@media screen and (min-width: 640px) {
+	article h1 {
+		font-size: 2rem;
+	}
+	
+	article h2 {
+		font-size: 1.25rem;
+	}
 }
 
 article p {
@@ -136,6 +169,7 @@ html.home main {
 	max-width: 740px;
 	margin: auto;
 	width: 100%;
+	padding: 1.25rem;
 }
 
 footer {
@@ -146,7 +180,8 @@ footer {
 }
 
 .bg {
-	background: #a2482a;
+	background: #8f4026;
+	box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), inset 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .banner {
@@ -161,11 +196,13 @@ footer {
 	margin-bottom: 1rem;
 }
 
-.page footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+@media screen and (min-width: 640px) and (min-height: 582px) {
+	.page footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
 }
 
 .newspaper {
@@ -176,6 +213,10 @@ footer {
 	margin: auto;
 	padding: 1rem;
 	padding-top: 2.25rem;
+}
+
+.newspaper a {
+	color: #e15e40;
 }
 
 @media screen and (min-width: 424px) {
