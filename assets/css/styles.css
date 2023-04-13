@@ -14,19 +14,19 @@ html.home body {
 
 html.home::before {
 	content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    background: url(/assets/images/site/acoustic.svg);
-    background-repeat: no-repeat;
-    background-position: center 70px;
-    background-size: 460px;
-    opacity: 0.15;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	background: url(/assets/images/site/acoustic.svg);
+	background-repeat: no-repeat;
+	background-position: center 100px;
+	background-size: 550px;
+	opacity: 0.2;
 }
 
 body {
@@ -34,7 +34,8 @@ body {
 }
 
 html {
-	background: #050505;
+	background-color: #050505;
+	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23292929' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 html,
@@ -122,6 +123,18 @@ nav a {
 	}
 }
 
+.logo {
+	display: flex;
+	background: #8f0d0d;
+	border-radius: 8rem;
+	width: 82px;
+	height: 82px;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+}
+
 article h1 {
 	font-weight: 600;
 	font-size: 1.875rem;
@@ -201,14 +214,8 @@ footer {
 	padding-top: .5rem;
 }
 
-.bg::before {
-	content: '';
-	display: block;
-	width: 100%;
-	background: url(/assets/branding/imagery/68cc5fc2173d756489cc485e0548e099.jpg) #8f4026 center no-repeat;
-}
 .bg {
-	background: #8f4026;
+	background-color: #0e0e0e;
 	box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), inset 0 3px 6px rgba(0,0,0,0.23);
 	position: relative;
 }
