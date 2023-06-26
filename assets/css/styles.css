@@ -39,7 +39,7 @@ html.home::before {
 	position: relative;
 }
 
-.page::before {
+/* .page::before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -54,7 +54,7 @@ html.home::before {
 	background-position: center;
 	background-size: contain;
 	opacity: 0.1;
-}
+} */
 
 
 body {
@@ -251,6 +251,14 @@ footer {
 	max-width: 800px;
 	padding: 2rem;
 	margin: auto;
+}
+
+.policies article {
+	margin: 1.5rem 0 3rem;
+}
+
+.policies article p {
+	font-size: 1rem;
 }
 
 .newspaper {
