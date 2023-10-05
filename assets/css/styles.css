@@ -27,11 +27,11 @@ html.home::before {
 	left: 0;
 	width: 100%;
 	z-index: -1;
-	background: url(/assets/images/site/acoustic.svg);
+	/* background: url(/assets/images/site/acoustic.svg);
 	background-repeat: no-repeat;
 	background-position: center 100px;
 	background-size: 550px;
-	opacity: 0.2;
+	opacity: 0.2; */
 }
 
 .page {
@@ -227,10 +227,13 @@ svg {
 }
 
 .hero {
-	max-width: 740px;
+	max-width: 900px;
 	margin: auto;
 	width: 100%;
 	padding: 1.25rem;
+}
+main {
+	width:100%;
 }
 
 footer {
